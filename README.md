@@ -11,7 +11,7 @@ here : [[SPARK-15328][MLLIB][ML] Word2Vec import for original binary format](htt
 Reproduce the bug with Spark Shell
 
 ```
-spark-shell --driver-memory 10g --executor memory 10g --jars ./target/scala-2.11/word2vecimportmodel_2.11-1.0.jar
+spark-shell --driver-memory 10g --executor-memory 10g --jars ./target/scala-2.11/word2vecimportmodel_2.11-1.0.jar
 spark shell> import org.apache.spark.examples.ml.feature._
 spark shell> val path = "file:///media/data/repo/deeplearning4j/GoogleNews-vectors-negative300.bin.gz"
 spark shell> val word = "spark"
